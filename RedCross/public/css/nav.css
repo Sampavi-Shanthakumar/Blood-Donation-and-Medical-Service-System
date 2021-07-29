@@ -1,0 +1,104 @@
+.nav{
+    position: relative; 
+ z-index: 100;
+ background-color:rgb(110, 7, 7);
+ overflow:hidden;
+ 
+}
+
+.nav ul {
+list-style: none;
+background-color:rgb(110, 7, 7);
+text-align: center;
+padding: 0;
+margin: 0;
+width:100%;
+font-family: 'Cardo', serif;
+}
+@font-face {
+    font-family:ArmonelaBlack;
+    src:url('ArmonelaBlack.ttf') format('truetype');
+  }
+.nav li {
+font-family: 'Cardo', serif;
+color:white;
+font-size: 1.2em;
+font-weight:bold;
+line-height: 40px;
+text-align: left;
+}
+.title:hover{
+    text-decoration:none;
+    color:black;
+}
+.nav a {
+text-decoration: none;
+color: white;
+display: block;
+padding-left: 10px;
+border-bottom: 1px solid #888;
+transition: .3s background-color;
+}
+
+.nav a:hover {
+
+text-decoration:none;
+color:black;
+text-transform:uppercase;
+}
+
+.nav a.active {
+background-color: #aaa;
+color: white;
+cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+font-size: .8em;
+}
+
+/*******************************************
+Style menu for larger screens
+
+Using 650px (130px each * 5 items), but ems
+or other values could be used depending on other factors
+********************************************/
+
+
+.nav li {
+width: 130px;
+border-bottom: none;
+height: 50px;
+line-height: 50px;
+font-size: 1.4em;
+display: inline-block;
+margin-right: -4px;
+}
+
+.nav a {
+border-bottom: none;
+}
+
+.nav > ul > li {
+text-align: center;
+}
+
+.nav > ul > li > a {
+padding-left: 0;
+}
+
+/* Sub Menus */
+.nav li ul {
+position: absolute;
+display: none;
+width: inherit;
+}
+
+.nav li:hover ul {
+display: block;
+}
+
+.nav li ul li {
+display: block;
+}

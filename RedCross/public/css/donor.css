@@ -1,0 +1,11 @@
+.panel-body{
+    width:auto;
+    height:auto;
+    background-color:#f4f5f7;
+    margin-top:50px;
+    
+     border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    
+    }
